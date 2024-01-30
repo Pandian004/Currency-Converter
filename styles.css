@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to left, #00B4DB, #0083B0);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+     top: 95px;
+    /*left: 600px; */
+    /* text-align: center; */
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 25px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: -7px 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container form{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 25px;
+}
+
+.select-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 5px;
+    width: 130px;
+
+}
+
+.amount{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+}
+
+#amount, .exchange-rate{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ddd;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+.currency{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#exchange{
+    position: relative;
+    top: 15px;
+}
+
+#exchange:hover{
+    cursor: pointer;
+}
+
+#fromCurrency, #toCurrency{
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ddd;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+#convert{
+    width: 100%;
+    border:none;
+    padding: 10px;
+    border-radius: 7px;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to bottom left, #56ab2f,   #0f9b0f);
+}
+button:hover{
+    opacity: 0.9;
+}
+
+#title{
+    margin: 0;
+    padding: 0;
+}
+
+.fromto{
+    display: block;
+}

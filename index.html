@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/ x-icon" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- <h2>Exchange Rate</h2> -->
+        <img src="./exchange1.png" alt="logo" width="70" height="70" />
+        <h3 id="title">Exchange Rate</h3>
+        <form >
+            <div class="amount">
+                <label for="amount" id="title-amount">Enter the amount</label>
+                <input type="text" name="amount" id="amount" />
+            </div>
+            <div class="currency" id="currency">
+                <div class="from">
+                    <label for="fromCurrency">From</label>
+                    <div class="select-box">
+                        <img src="https://flagsapi.com/IN/shiny/32.png">
+                        <select name="fromCurrency" id="fromCurrency"></select>
+                    </div>
+                </div>
+                <div class="exchangeIcon">
+                    <img src="exchange.png" alt="exchange" width="30" id="exchange"/>
+                </div>
+                <div class="to">
+                    <label for="toCurrency">To</label>
+                    <div class="select-box">
+                        <img src="https://flagsapi.com/US/shiny/32.png">
+                        <select name="toCurrency" id="toCurrency"></select>
+                    </div>
+                </div>
+            </div>
+                <div class="exchange-rate">Getting exchange rate...</div>
+                <button id="convert">Get exchange rate</button>
+        </form>
+    </div>
+    <script src="js/countryList.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
